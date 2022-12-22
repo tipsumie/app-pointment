@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+
+* {
+  font-family: 'Andada Pro', serif;
+}
+
+body {
+  background-image: url(../src/images/2203.jpg);
+  background-size: cover;
+}
+
+
+/* authentication pages */
+
+.auth {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  background-color: #1f1d6bea;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.accout,
+.accout:hover {
+  color: red;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.img-login {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title>h3 {
+  margin-bottom: 0;
+}
+
+label .accout {
+  color: red !important;
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+  justify-content: center;
+}
+
+
+.anchor {
+  color: rgb(30, 34, 72) !important;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px !important;
+}
+
+.anchor:hover {
+  color: blue !important;
+  text-decoration: underline;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.card-header {
+  margin: 5px 10px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card-body>p {
+  margin: 0;
+}
+
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #050420ea;
+  width: 100%;
+  text-align: center;
+}
+
+
+h2 {
+  color: #050420ea;
+}
+
+/* add clinic pages */
+
+.content-title {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+/* md */
+@media (min-width: 768px) {
+  .card {
+    width: 537px;
+
+  }
+}
+
+
+/* lg */
+@media (min-width: 990px) {
+
+  .clinic-list .ant-col {
+    display: block;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card {
+    width: 400px;
+  }
+}
+
+@media (min-width: 990px) {
+  .card {
+    width: 350px;
+  }
+}
+
+
+
+@media (min-width: 1250px) {
+
+  .clinic-list .ant-col {
+    display: block;
+    flex: 0 0 33.333%;
+    max-width: 33.33%;
+  }
+}
+
+/* table header*/
+.ant-table-thead>tr>th {
+  text-align: center;
+  font-weight: 700;
+}
+
+.manage-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  width: 6px;
+  height: auto;
+  display: inline-block;
+}
+
+/* table header*/
+.delete-meessage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 4px;
+
+}
+
+/* BookAppointment pages */
+
+.book-info {
+  margin-top: 15px
+}
+
+.book-details {
+  width: 100%;
+  margin-top: 12px
+}
+
+.btn-book>button {
+  width: 100%;
+  margin-top: 10px
+}
