@@ -33,7 +33,7 @@ function ClinicForm({ onFinish, initialValues }) {
             <Input placeholder='กรอกชื่อคลินิก' />
           </Form.Item>
           <Form.Item
-            label='โทรศัพท์ติดต่อ  (ex. 091-xxx-xxxx)'
+            label='โทรศัพท์ติดต่อ  (ex.091-xxx-xxxx)'
             name='clinicTel'
             rules={[
               { required: true, message: 'กรุณากรอกเบอร์' },
@@ -58,7 +58,7 @@ function ClinicForm({ onFinish, initialValues }) {
             />
           </Form.Item>
           <Form.Item
-            label='เว็บไซต์คลินิก (ex. www.xxxx.com)'
+            label='เว็บไซต์คลินิก'
             name='clinicWeb'
             rules={[{ type: 'url', message: 'กรอกเว็บไซต์' }]}
             hasFeedback

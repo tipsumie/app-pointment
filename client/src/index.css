@@ -125,7 +125,7 @@ h2 {
 
 .content-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
 }
 
@@ -209,4 +209,8 @@ h2 {
 .btn-book>button {
   width: 100%;
   margin-top: 10px
+}
+
+.ant-form-item {
+  margin: 0 0 10px;
 }

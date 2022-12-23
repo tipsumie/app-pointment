@@ -103,7 +103,6 @@ function Layout({ children }) {
         <nav className='nav'>
           <div>
             <div className='sidebar-img'>
-              {/* <i className='ri-heart-add-fill'></i> */}
               <img
                 src={logo}
                 alt='logo'
@@ -144,10 +143,7 @@ function Layout({ children }) {
           </div>
         </nav>
       </aside>
-
-      <div className='main-content'>
-        <div className='main-container'>{children}</div>
-      </div>
+      <div className='contain-content'>{children}</div>
     </main>
   );
 }
