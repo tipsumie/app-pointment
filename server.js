@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const dbConfig = require('./config/dbConfig');
+const path = require('path')
 app.use(express.json());
 const userRoute = require('./routes/userRoute');
 const adminRoute = require('./routes/adminRoute');
@@ -17,7 +18,16 @@ app.use('/api/clinic', clinicRoute);
 // Serving static files
 app.use(express.static(__dirname + '/public'));
 
-// 5000
+app.use("/", express.static(path.join(__dirname, "client/build")));
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "client/build/index.html"),
+    function (err) {
+      res.status(500).send(err);
+    }
+  );
+});
+
 const port = process.env.PORT;
 
 app.listen(port, () => {
